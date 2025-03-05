@@ -1,0 +1,91 @@
+/*ESTILO-GERAL*/
+*{  /*Mudando a configuraçao padrão dos navegadores*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{ /*Cor de fundo do site*/
+    background-color: aliceblue;
+    height: 100vh;
+
+}
+
+
+.interface{   /*Configuraçao amostragem div-interface*/
+    max-width: 1280px;
+    margin: 0 auto;
+    
+}
+
+/*ESTILO PARA O CABEÇALHO*/
+
+header{  /*Espaçamento do cabeçalho*/
+    padding: 40px 4%;
+
+}
+
+header > .interface{ /*Configuraçao alinhamento entre os elementos menu-home*/
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header a{ /*Configuraçao menu-home*/
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    
+}
+
+header a:hover{  /*Efeito Mouse menu-home*/
+    color: #1522d6c4 ;
+    transform: scale(1.20);
+
+
+}
+
+header div .logo-home img{ /*Configuraçao tamanho ico logo-home*/
+    width: 100px;
+    height: 100px;
+}
+
+header div .logo-home img:hover{
+    transform: scale(1.0);
+
+}
+header nav ul{ /* Configuraçao lista desordenada menu-home*/
+    list-style: none;
+
+}
+
+header nav ul li{ /*Configuraçao menu-home*/
+    display: inline-block;
+    padding: 0 40px;
+
+}
+
+
+header .bnt-cnt-home button{ /*Configuraçao bnt-cnt-home*/
+    padding: 10px 40px; 
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #e7760c;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    
+}
+
+header .bnt-cnt-home button:hover{ /* EFEITO ao Passar o mouse no bnt-cnt-home*/
+    box-shadow: 0px 0px 8px #ffa601a8;
+
+}
+
+
+
