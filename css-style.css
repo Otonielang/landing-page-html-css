@@ -20,6 +20,22 @@ body{ /*Cor de fundo do site*/
     
 }
 
+.flex{
+    display: flex;
+
+}
+
+.bnt-cnt-contato button{ /*Configuraçao bnt-cnt-home*/
+    padding: 10px 40px; 
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #e7760c;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
 /*ESTILO PARA O CABEÇALHO*/
 
 header{  /*Espaçamento do cabeçalho*/
@@ -70,22 +86,59 @@ header nav ul li{ /*Configuraçao menu-home*/
 
 }
 
-
-header .bnt-cnt-home button{ /*Configuraçao bnt-cnt-home*/
-    padding: 10px 40px; 
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #e7760c;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-    
-}
-
-header .bnt-cnt-home button:hover{ /* EFEITO ao Passar o mouse no bnt-cnt-home*/
-    box-shadow: 0px 0px 8px #ffa601a8;
-
+button:hover,
+form .btn-enviar input:hover { /* EFEITO ao Passar o mouse no bnt-cnt-home*/
+    box-shadow: 0px 0px 8px #f0b103;
+    transform: scale(1.05);
 }
 
 
+/*ESTILO TOPO SITE*/
 
+section.topo-do-site{
+
+    padding: 40px 4%;
+
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+
+}
+
+.topo-do-site h1{
+    color: #205a29;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #e7760c;
+
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #000000;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
